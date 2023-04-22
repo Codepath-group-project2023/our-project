@@ -38,7 +38,7 @@ The following REQUIRED files are included:
 
 The following BONUS features are implemented:
 
-- [ ] Added digital wireframe/mockup image(s)
+- [X] Added digital wireframe/mockup image(s)
 - [ ] Added a GIF of an interactive prototype
 
 The following EXTRA features are implemented:
@@ -48,3 +48,5 @@ The following EXTRA features are implemented:
 ## Notes
 
 Here's a place for any other notes on this milestone!
+
+Teamwork makes the dreamwork! 👭👫
