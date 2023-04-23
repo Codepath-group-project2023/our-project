@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         rvRecipes = findViewById(R.id.recipe_list)
+        imagelist = mutableListOf()
+
 
     }
 }
