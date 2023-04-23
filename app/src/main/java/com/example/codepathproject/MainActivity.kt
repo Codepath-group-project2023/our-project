@@ -100,6 +100,9 @@ class MainActivity : AppCompatActivity() {
                     override fun onItemClick(position: Int) {
 
                         Toast.makeText(this@MainActivity, "You clicked on $position", Toast.LENGTH_SHORT).show()
+
+                        val intent = Intent(this@MainActivity,RecipeDetails::class.java)
+                        startActivity(intent)
                     }
                 })
 
