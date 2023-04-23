@@ -9,13 +9,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b7944d6-e017-45a1-8f08-03bd516feba5" name="Changes" comment="" />
+    <list default="true" id="582482c6-bd2b-4e72-917a-1e83d0370bbd" name="Changes" comment="Worked on recyclerview.xml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/lubnaasha/.android/avd/Asha_Pixel_4a_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/kazianwar/.android/avd/Pixel_4a_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -59,6 +61,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="layoutResourceFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -70,7 +79,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2OnH8wnOgXvALGF8dG9uO5OL8Xn" />
+  <component name="ProjectId" id="2OnHi0XeEmuezZ1xOA8yJFlJboH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -80,8 +89,12 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;memory.settings.postsync.last.time.stamp&quot;: &quot;1682189282951&quot;
+    &quot;memory.settings.postsync.last.time.stamp&quot;: &quot;1682189630731&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
   <component name="RunManager">
@@ -147,12 +160,69 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2b7944d6-e017-45a1-8f08-03bd516feba5" name="Changes" comment="" />
-      <created>1682189270189</created>
+      <changelist id="582482c6-bd2b-4e72-917a-1e83d0370bbd" name="Changes" comment="" />
+      <created>1682189548686</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1682189270189</updated>
+      <updated>1682189548686</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added files">
+      <created>1682191154359</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682191154359</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added files">
+      <created>1682191250562</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682191250562</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added files">
+      <created>1682191316399</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682191316399</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added files">
+      <created>1682191335484</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682191335484</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added files">
+      <created>1682191397999</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682191397999</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added files">
+      <created>1682191673152</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682191673152</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added files">
+      <created>1682191681918</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682191681918</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Worked on recyclerview.xml">
+      <created>1682197582648</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682197582648</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,5 +235,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added files" />
+    <MESSAGE value="Worked on recyclerview.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked on recyclerview.xml" />
   </component>
 </project>
