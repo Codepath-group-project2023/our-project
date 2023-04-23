@@ -25,9 +25,9 @@
 
         <TextView
             android:id="@+id/recipename"
-            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             app:layout_constraintBottom_toTopOf="@id/categories"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.056"
@@ -36,9 +36,9 @@
 
         <TextView
             android:id="@+id/categories"
-            android:layout_marginTop="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             app:layout_constraintBottom_toBottomOf="@id/categories"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.056"
