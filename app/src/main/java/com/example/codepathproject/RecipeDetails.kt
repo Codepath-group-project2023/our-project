@@ -58,7 +58,7 @@ class RecipeDetails : AppCompatActivity() {
                 for (i in 1 until 21) {
                     val ingred = recipe.getString("strIngredient$i")
                     val measurements = recipe.getString("strMeasure$i")
-                    if(ingred != null && ingred != ""){
+                    if(ingred != "null" && ingred != ""){
                         ingredientsList.add(ingred)
                         measurementsList.add(measurements)
                     }
