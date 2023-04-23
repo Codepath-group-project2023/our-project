@@ -1,5 +1,6 @@
 package com.example.codepathproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -71,20 +72,20 @@ class MainActivity : AppCompatActivity() {
             override fun onSuccess(statusCode: Int, headers: Headers, json: JsonHttpResponseHandler.JSON) {
                 Log.d("Recipe Success", "$json")
 
-                var getImage = json.jsonObject.getJSONArray("meals")
+                var getRecipe = json.jsonObject.getJSONArray("meals")
 
-                for (i in 0 until getImage.length()) {
-                    var imageArray = getImage.getJSONObject(i)
+                for (i in 0 until getRecipe.length()) {
+                    var imageArray = getRecipe.getJSONObject(i)
                     imagelist.add(imageArray.getString("strMealThumb"))
                 }
 
-                for (i in 0 until getImage.length()) {
-                    var imageArray = getImage.getJSONObject(i)
+                for (i in 0 until getRecipe.length()) {
+                    var imageArray = getRecipe.getJSONObject(i)
                     namelist.add(imageArray.getString("strMeal"))
                 }
 
-                for (i in 0 until getImage.length()) {
-                    var imageArray = getImage.getJSONObject(i)
+                for (i in 0 until getRecipe.length()) {
+                    var imageArray = getRecipe.getJSONObject(i)
                     categorylist.add(imageArray.getString("strCategory"))
                 }
 
@@ -93,6 +94,14 @@ class MainActivity : AppCompatActivity() {
                 rvRecipes.adapter = adapter
                 rvRecipes.layoutManager = LinearLayoutManager(this@MainActivity)
                 rvRecipes.addItemDecoration(DividerItemDecoration(this@MainActivity, LinearLayoutManager.VERTICAL))
+
+                //this is for being able to click on an item in recycler view
+                adapter.setOnItemClickListener(object: RecipeAdapter.onItemClickListener{
+                    override fun onItemClick(position: Int) {
+
+                        Toast.makeText(this@MainActivity, "You clicked on $position", Toast.LENGTH_SHORT).show()
+                    }
+                })
 
             }
         }]
