@@ -10,17 +10,35 @@ import com.bumptech.glide.Glide
 
 class RecipeAdapter(private var imagelist: List<String>, private var namelist: List<String>, private var categorylist: List<String>) : RecyclerView.Adapter<RecipeAdapter.ViewHolder>() {
 
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    //** these r for being able to click on item in recycler view
+    private lateinit var mListener : onItemClickListener
+
+    interface onItemClickListener {
+        fun onItemClick(position: Int)
+    }
+
+    fun setOnItemClickListener(listener: onItemClickListener) {
+        mListener = listener
+    }
+    //**
+
+
+
+    class ViewHolder(view: View, listener: onItemClickListener) : RecyclerView.ViewHolder(view) {
         var image: ImageView
         var user: TextView
         var category: TextView
-
 
         init {
             // Find our RecyclerView item's ImageView for future use
             image = view.findViewById(R.id.mealpicture)
             user = view.findViewById(R.id.recipename)
             category = view.findViewById(R.id.categories)
+
+            //this is for being able to click on an item in recycler view
+            itemView.setOnClickListener {
+                listener.onItemClick(adapterPosition)
+            }
         }
     }
 
@@ -29,7 +47,7 @@ class RecipeAdapter(private var imagelist: List<String>, private var namelist: L
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.recyclerview, parent, false)
 
-        return ViewHolder(view)
+        return ViewHolder(view, mListener) //passing mListener to be able to click on an item in recycler view
     }
 
     override fun getItemCount() = imagelist.size
