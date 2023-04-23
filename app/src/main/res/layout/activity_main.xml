@@ -24,13 +24,10 @@
         android:id="@+id/SearchButton"
         android:layout_width="106dp"
         android:layout_height="60dp"
-        android:layout_marginTop="28dp"
         android:text="Button"
-        app:layout_constraintBottom_toTopf="@+id/recipe_list"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintBottom_toBottomOf="@id/SearchBar"
         app:layout_constraintStart_toEndOf="@id/SearchBar"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/SearchBar" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recipe_list"
