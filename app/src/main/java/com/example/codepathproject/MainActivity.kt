@@ -98,10 +98,8 @@ class MainActivity : AppCompatActivity() {
                 //this is for being able to click on an item in recycler view
                 adapter.setOnItemClickListener(object: RecipeAdapter.onItemClickListener{
                     override fun onItemClick(position: Int) {
-
-                        Toast.makeText(this@MainActivity, "You clicked on $position", Toast.LENGTH_SHORT).show()
-
                         val intent = Intent(this@MainActivity,RecipeDetails::class.java)
+                        intent.putExtra("meal",namelist[position])
                         startActivity(intent)
                     }
                 })
@@ -110,4 +108,3 @@ class MainActivity : AppCompatActivity() {
         }]
     }
 }
-
