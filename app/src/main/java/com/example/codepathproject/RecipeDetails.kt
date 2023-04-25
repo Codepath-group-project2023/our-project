@@ -1,12 +1,11 @@
 package com.example.codepathproject
 
-import android.media.Image
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.codepath.asynchttpclient.AsyncHttpClient
@@ -33,6 +32,9 @@ class RecipeDetails : AppCompatActivity() {
         measurementsList = mutableListOf()
 
         getDetails(recipeName, image, instructs, ingreds)
+
+        var returnButton = findViewById<Button>(R.id.return_button)
+        Return(returnButton)
     }
     private fun getDetails(recipeName: TextView,
                            image: ImageView,
@@ -81,8 +83,9 @@ class RecipeDetails : AppCompatActivity() {
             .into(image)
     }
     // ActivityTwo.kt
-    fun onSubmit(v: View) {
-        // closes the activity and returns to first screen
-        this.finish();
+    private fun Return(button: Button){
+        button.setOnClickListener(){
+            this@RecipeDetails.finish()
+        }
     }
 }

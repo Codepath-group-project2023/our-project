@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageButton
 import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -33,12 +32,15 @@ class MainActivity : AppCompatActivity() {
 
         var button = findViewById<Button>(R.id.SearchButton)
 
-        Log.d("RecipeURL","Recipe URL set")
+        Log.d("RecipeURL", "Recipe URL set")
         getRecipe(button)
+
+        var randomButton = findViewById<Button>(R.id.randomButton)
+        random(randomButton)
     }
 
     private fun getRecipe(button: Button) {
-        button.setOnClickListener{
+        button.setOnClickListener {
             var input = findViewById<EditText>(R.id.SearchBar)
             inputText = input.getText().toString()
             imagelist.clear()
@@ -59,7 +61,8 @@ class MainActivity : AppCompatActivity() {
     private fun getRecipeURL() {
         var client = AsyncHttpClient()
 
-        client["https://www.themealdb.com/api/json/v1/1/search.php?s=$inputText", object : JsonHttpResponseHandler() {
+        client["https://www.themealdb.com/api/json/v1/1/search.php?s=$inputText", object :
+            JsonHttpResponseHandler() {
             override fun onFailure(
                 statusCode: Int,
                 headers: Headers?,
@@ -69,7 +72,11 @@ class MainActivity : AppCompatActivity() {
                 Log.d("Recipe Error", errorResponse)
             }
 
-            override fun onSuccess(statusCode: Int, headers: Headers, json: JsonHttpResponseHandler.JSON) {
+            override fun onSuccess(
+                statusCode: Int,
+                headers: Headers,
+                json: JsonHttpResponseHandler.JSON
+            ) {
                 Log.d("Recipe Success", "$json")
 
                 var getRecipe = json.jsonObject.getJSONArray("meals")
@@ -89,22 +96,54 @@ class MainActivity : AppCompatActivity() {
                     categorylist.add(imageArray.getString("strCategory"))
                 }
 
-
                 var adapter = RecipeAdapter(imagelist, namelist, categorylist)
                 rvRecipes.adapter = adapter
                 rvRecipes.layoutManager = LinearLayoutManager(this@MainActivity)
-                rvRecipes.addItemDecoration(DividerItemDecoration(this@MainActivity, LinearLayoutManager.VERTICAL))
+                rvRecipes.addItemDecoration(
+                    DividerItemDecoration(
+                        this@MainActivity,
+                        LinearLayoutManager.VERTICAL
+                    )
+                )
 
                 //this is for being able to click on an item in recycler view
-                adapter.setOnItemClickListener(object: RecipeAdapter.onItemClickListener{
+                adapter.setOnItemClickListener(object : RecipeAdapter.onItemClickListener {
                     override fun onItemClick(position: Int) {
-                        val intent = Intent(this@MainActivity,RecipeDetails::class.java)
-                        intent.putExtra("meal",namelist[position])
+                        val intent = Intent(this@MainActivity, RecipeDetails::class.java)
+                        intent.putExtra("meal", namelist[position])
                         startActivity(intent)
                     }
                 })
-
             }
         }]
+    }
+
+    private fun random(randomButton: Button) {
+        randomButton.setOnClickListener(){
+
+            var client = AsyncHttpClient()
+
+            client["https://www.themealdb.com/api/json/v1/1/random.php", object : JsonHttpResponseHandler() {
+                override fun onFailure(
+                    statusCode: Int,
+                    headers: Headers?,
+                    errorResponse: String,
+                    throwable: Throwable?
+                ) { Log.d("Recipe Error", errorResponse) }
+
+                override fun onSuccess(statusCode: Int, headers: Headers, json: JsonHttpResponseHandler.JSON) {
+                    Log.d("Recipe Success", "$json")
+                    var getRecipe = json.jsonObject.getJSONArray("meals")
+                    var recipe = getRecipe.getJSONObject(0)
+                    var name = recipe.getString("strMeal")
+
+
+                val intent = Intent(this@MainActivity, RecipeDetails::class.java)
+                intent.putExtra("meal", name)
+                startActivity(intent)
+                }
+            }]
+
+        }
     }
 }
