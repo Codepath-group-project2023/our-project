@@ -63,7 +63,7 @@ class RecipeDetails : AppCompatActivity() {
                         measurementsList.add(measurements)
                     }
                 }
-                Log.d("details","$instructions")
+                Log.d("details","set")
                 loadDetails(recipeName,image,instructs,ingreds)
             }
         }]
@@ -71,11 +71,13 @@ class RecipeDetails : AppCompatActivity() {
     private fun loadDetails(recipeName: TextView,image: ImageView,instructs: TextView, ingreds: TextView){
         recipeName.text = mealName
         instructs.text = instructions
+
         var array = measurementsList.zip(ingredientsList) {a,b -> "$a $b"} //combines measurement and ingredients list
         var list = ""
         for(item in array)
             list = list + item + "\n"
         ingreds.text = list
+
         Glide.with(this)
             .load(imageURL)
             .into(image)
