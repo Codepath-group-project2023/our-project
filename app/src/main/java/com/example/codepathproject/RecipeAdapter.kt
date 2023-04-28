@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class RecipeAdapter(private var imagelist: List<String>, private var namelist: List<String>, private var categorylist: List<String>) : RecyclerView.Adapter<RecipeAdapter.ViewHolder>() {
+class RecipeAdapter(private var imagelist: List<String>, private var namelist: List<String>, private var categorylist: List<String>, private var arealist: List<String>) : RecyclerView.Adapter<RecipeAdapter.ViewHolder>() {
 
     //** these r for being able to click on item in recycler view
     private lateinit var mListener : onItemClickListener
@@ -28,12 +28,14 @@ class RecipeAdapter(private var imagelist: List<String>, private var namelist: L
         var image: ImageView
         var user: TextView
         var category: TextView
+        var area: TextView
 
         init {
             // Find our RecyclerView item's ImageView for future use
             image = view.findViewById(R.id.mealpicture)
             user = view.findViewById(R.id.recipename)
             category = view.findViewById(R.id.categories)
+            area = view.findViewById(R.id.area)
 
             //this is for being able to click on an item in recycler view
             itemView.setOnClickListener {
@@ -60,6 +62,7 @@ class RecipeAdapter(private var imagelist: List<String>, private var namelist: L
 
         holder.user.text = namelist[position]
         holder.category.text = "Category: " + categorylist[position]
+        holder.area.text = "Area: " + arealist[position]
     }
 
 

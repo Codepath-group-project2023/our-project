@@ -4,8 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -13,12 +15,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import okhttp3.Headers
+import kotlin.time.Duration.Companion.seconds
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var imagelist: MutableList<String>
     private lateinit var namelist: MutableList<String>
     private lateinit var categorylist: MutableList<String>
+    private lateinit var arealist: MutableList<String>
     var inputText = ""
     private lateinit var rvRecipes: RecyclerView
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,11 +33,12 @@ class MainActivity : AppCompatActivity() {
         imagelist = mutableListOf()
         namelist = mutableListOf()
         categorylist = mutableListOf()
+        arealist = mutableListOf()
 
         var button = findViewById<Button>(R.id.SearchButton)
 
-        Log.d("RecipeURL", "Recipe URL set")
         getRecipe(button)
+        Log.d("RecipeURL", "Recipe URL set")
 
         var randomButton = findViewById<Button>(R.id.randomButton)
         random(randomButton)
@@ -41,11 +46,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun getRecipe(button: Button) {
         button.setOnClickListener {
+
             var input = findViewById<EditText>(R.id.SearchBar)
             inputText = input.getText().toString()
             imagelist.clear()
             namelist.clear()
             categorylist.clear()
+            arealist.clear()
 
             getRecipeURL()
 
@@ -54,7 +61,6 @@ class MainActivity : AppCompatActivity() {
 
             val toast = Toast.makeText(applicationContext, text, duration)
             toast.show()
-
         }
     }
 
@@ -96,7 +102,12 @@ class MainActivity : AppCompatActivity() {
                     categorylist.add(imageArray.getString("strCategory"))
                 }
 
-                var adapter = RecipeAdapter(imagelist, namelist, categorylist)
+                for (i in 0 until getRecipe.length()) {
+                    var imageArray = getRecipe.getJSONObject(i)
+                    arealist.add(imageArray.getString("strArea"))
+                }
+
+                var adapter = RecipeAdapter(imagelist, namelist, categorylist, arealist)
                 rvRecipes.adapter = adapter
                 rvRecipes.layoutManager = LinearLayoutManager(this@MainActivity)
                 rvRecipes.addItemDecoration(
