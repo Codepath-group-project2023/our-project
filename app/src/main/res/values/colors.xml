@@ -7,9 +7,11 @@
     <color name="yellow">#e9c46a</color>
     <color name="orange">#f4a261</color>
     <color name="red">#e76f51</color>
+    <color name="gri">#474747</color>
     <!--night mode colors-->
-    <color name="dark_red">#D385241D</color>
+    <color name="dark_red">#e62F0E10</color>
+    <color name="dark_lilac">#342E37</color>
     <!--default colors-->
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="white">#E3FFFFFF</color>
 </resources>
