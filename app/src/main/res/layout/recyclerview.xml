@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="150dp"
     android:background="@drawable/rounded_corners"
+    android:backgroundTint="?attr/colorPrimaryVariant"
     android:clipToOutline="true"
     android:layout_marginBottom="4dp"
     android:layout_marginTop="4dp"

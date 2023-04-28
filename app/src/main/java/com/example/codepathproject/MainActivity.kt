@@ -110,12 +110,7 @@ class MainActivity : AppCompatActivity() {
                 var adapter = RecipeAdapter(imagelist, namelist, categorylist, arealist)
                 rvRecipes.adapter = adapter
                 rvRecipes.layoutManager = LinearLayoutManager(this@MainActivity)
-                rvRecipes.addItemDecoration(
-                    DividerItemDecoration(
-                        this@MainActivity,
-                        LinearLayoutManager.VERTICAL
-                    )
-                )
+
 
                 //this is for being able to click on an item in recycler view
                 adapter.setOnItemClickListener(object : RecipeAdapter.onItemClickListener {
