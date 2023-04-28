@@ -65,5 +65,4 @@ class RecipeAdapter(private var imagelist: List<String>, private var namelist: L
         holder.area.text = "Area: " + arealist[position]
     }
 
-
 }

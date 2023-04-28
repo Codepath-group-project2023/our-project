@@ -1,21 +1,20 @@
 package com.example.codepathproject
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
+import android.view.WindowManager
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
-import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
 import okhttp3.Headers
-import kotlin.time.Duration.Companion.seconds
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,9 +24,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var arealist: MutableList<String>
     var inputText = ""
     private lateinit var rvRecipes: RecyclerView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
 
         rvRecipes = findViewById(R.id.recipe_list)
         imagelist = mutableListOf()
@@ -47,6 +48,12 @@ class MainActivity : AppCompatActivity() {
     private fun getRecipe(button: Button) {
         button.setOnClickListener {
 
+            val imm = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(
+                button.getWindowToken(),
+                InputMethodManager.RESULT_UNCHANGED_SHOWN
+            )
+
             var input = findViewById<EditText>(R.id.SearchBar)
             inputText = input.getText().toString()
             imagelist.clear()
@@ -55,12 +62,6 @@ class MainActivity : AppCompatActivity() {
             arealist.clear()
 
             getRecipeURL()
-
-            val text = "Search successful!"
-            val duration = Toast.LENGTH_SHORT
-
-            val toast = Toast.makeText(applicationContext, text, duration)
-            toast.show()
         }
     }
 
@@ -81,8 +82,8 @@ class MainActivity : AppCompatActivity() {
             override fun onSuccess(
                 statusCode: Int,
                 headers: Headers,
-                json: JsonHttpResponseHandler.JSON
-            ) {
+                json: JsonHttpResponseHandler.JSON)
+            {
                 Log.d("Recipe Success", "$json")
 
                 var getRecipe = json.jsonObject.getJSONArray("meals")
@@ -111,6 +112,11 @@ class MainActivity : AppCompatActivity() {
                 rvRecipes.adapter = adapter
                 rvRecipes.layoutManager = LinearLayoutManager(this@MainActivity)
 
+                val text = "Search successful!"
+                val duration = Toast.LENGTH_SHORT
+
+                val toast = Toast.makeText(applicationContext, text, duration)
+                toast.show()
 
                 //this is for being able to click on an item in recycler view
                 adapter.setOnItemClickListener(object : RecipeAdapter.onItemClickListener {
