@@ -10,7 +10,7 @@ Submitted by:
 - **Kazi**
 - **Gael**
 
-Time spent: **X** hours spent in total
+Time spent: **20** hours spent in total
 
 ## Summary
 
@@ -33,27 +33,27 @@ The following REQUIRED files are included:
   - [X] Checked off 2+ completed features
   - [X] 2+ GIFs of build progress
 
-- [ ] Our 🎥 Demo Video
-  - [ ] We have also added the Demo Video Link to the Group Info Form on the course portal.
+- [X] Our 🎥 Demo Video
+  - [X] We have also added the Demo Video Link to the Group Info Form on the course portal
 
 The following EXTRA features are implemented:
 
 - [X] random recipe by the click of a button
-- [ ] night theme (can do)
+- [X] night theme
 - [X] toasts
-- [ ] nav bar (can do)
-- [ ] custom fonts (can do)
+- [X] nav bar
+- [X] custom fonts
 
 ## 🎥 Demo Video
 
 Here's a video that demos all of the app's implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src='https://youtu.be/PuwE8S_srZk' title='Video Demo' width='' alt='Video Demo' />
 
-VIDEO created with **your chosen video tool**
+VIDEO created with **youtube**
 
 ## Notes
-Pulling and pushing from various branches is fun :)
+Wrapping up is fun :)
 <!-- (This is a comment) INSTRUCTIONS: Go through this page and fill out any **bolded** entries with their correct values.-->
 
 # AND101 Milestone 1 - **Meal Master**
