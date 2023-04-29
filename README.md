@@ -48,7 +48,9 @@ The following EXTRA features are implemented:
 
 Here's a video that demos all of the app's implemented features:
 
-<img src='https://youtu.be/PuwE8S_srZk' title='Video Demo' width='' alt='Video Demo' />
+
+[![Video:](https://img.youtube.com/vi/PuwE8S_srZk/0.jpg)](https://www.youtube.com/watch?v=PuwE8S_srZk)
+
 
 VIDEO created with **youtube**
 
