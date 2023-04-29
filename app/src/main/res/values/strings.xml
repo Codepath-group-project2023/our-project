@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Codepath project</string>
+    <string name="API_credit"> All recipes are directly sourced from the Meal DB API! ♥️</string>
 </resources>

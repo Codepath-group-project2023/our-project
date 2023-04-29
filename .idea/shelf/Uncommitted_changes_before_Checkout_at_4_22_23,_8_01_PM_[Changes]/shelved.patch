@@ -1,0 +1,201 @@
+Index: .idea/modules/app/Codepath_project.app.unitTest.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module version=\"4\">\n  <component name=\"FacetManager\">\n    <facet type=\"kotlin-language\" name=\"Kotlin\">\n      <configuration version=\"5\" platform=\"JVM 1.8\" allPlatforms=\"JVM [1.8]\" useProjectSettings=\"false\">\n        <compilerSettings>\n          <option name=\"additionalArguments\" value=\"-Xallow-no-source-files\" />\n        </compilerSettings>\n        <compilerArguments>\n          <flagArguments>\n            <flagArg name=\"noReflect\" arg=\"true\" />\n            <flagArg name=\"noStdlib\" arg=\"true\" />\n          </flagArguments>\n          <stringArguments>\n            <stringArg name=\"classpath\">\n              <args>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/5bd49a63dc73fb762d2e42dbe387a8cd/transformed/material-1.8.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/7b51378cf19df2bb0364696fb1766436/transformed/appcompat-1.6.1-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/ca3f5e99f1d392c959ed56a49181a62e/transformed/viewpager2-1.0.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/70a1fed15a22e899ec1124dfa87f2810/transformed/fragment-1.3.6-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/663d26d754407b1d4f39cb9b6436d87c/transformed/activity-1.6.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/a8f660cee45e657c44ec1ea330cce978/transformed/lifecycle-viewmodel-savedstate-2.5.1-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.1/97fd74ccf54a863d221956ffcd21835e168e2aaa/kotlinx-coroutines-core-jvm-1.6.1.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.1/4e61fcdcc508cbaa37c4a284a50205d7c7767e37/kotlinx-coroutines-android-1.6.1.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.8.0/ed04f49e186a116753ad70d34f0ac2925d1d8020/kotlin-stdlib-jdk8-1.8.0.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/a958544af8d43c79c38d0251def9fbc9/transformed/asynchttpclient-2.2.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/83de2a7703527a60fa45db5fa051d67e/transformed/core-ktx-1.9.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/3036ffb1e6e3fa6dc549c645404d4a0d/transformed/constraintlayout-2.1.4-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.13.2/8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12/junit-4.13.2.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.8.0/3c91271347f678c239607abb676d4032a7898427/kotlin-stdlib-jdk7-1.8.0.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/e517611053b1737c0ca9bca8885fe35b/transformed/stetho-okhttp3-1.5.1-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/4.9.0/8e17601d3bdc8cf57902c154de021931d2c27c1/okhttp-4.9.0.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/27f743e397187d3b7a6207834fc94a11/transformed/savedstate-1.2.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/9de8906c432f8ae11e3fa551295ff84d/transformed/appcompat-resources-1.6.1-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/97b3e434ef69ceb97c4631a575b62fa4/transformed/drawerlayout-1.1.1-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/20d3277ff51f0aa65daa96390b93ca16/transformed/coordinatorlayout-1.1.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/f9f6e1c8922a9dd389253d128485bec9/transformed/dynamicanimation-1.0.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/f8b7ec68395c53b66ef57c67140193e5/transformed/recyclerview-1.1.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/ca1406a194d7ad91c9b7e4d26dae5d1b/transformed/transition-1.2.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/3c74224f6f97d4c6678d7e887c6ce079/transformed/vectordrawable-animated-1.1.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/7dc3d48cfce2d7a3c70b0d35318f09f8/transformed/vectordrawable-1.1.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/9d97ba758de51a6c1e4aa2e93ce6932f/transformed/viewpager-1.0.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/2d569e386bca98cd8bd206933d04efae/transformed/customview-1.1.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/76eca5b90d684e6551fd26dc2a234383/transformed/legacy-support-core-utils-1.0.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/66ae6185779580235e6bef60bad24d79/transformed/loader-1.0.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/1c1d174cd20b01b09ec7a594cfbb3752/transformed/core-1.9.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/7ad2d36474ebedf744e40cd69f3846c0/transformed/annotation-experimental-1.3.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/2.8.0/49b64e09d81c0cc84b267edd0c2fd7df5a64c78c/okio-jvm-2.8.0.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/a27c14eec2a63153ae6b7938f09f6c38/transformed/lifecycle-viewmodel-2.5.1-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.8.0/1796921c7a3e2e2665a83e6c8d33399336cd39bc/kotlin-stdlib-1.8.0.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.8.0/f7197e7cc76453ac59f8b0f8d5137cc600becd36/kotlin-stdlib-common-1.8.0.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/c1b57e6f1803fd51feb372b236f45cb4/transformed/cursoradapter-1.0.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/9bf297ac2a07ec36c81b43d5fbeb7ab8/transformed/cardview-1.0.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/1148843d8f820518861b0495358d956d/transformed/lifecycle-runtime-2.5.1-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/c51880952c491ad0957d033d09977ae4/transformed/versionedparcelable-1.1.1-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/c1853e50acb077a99000fab36f6b7829/transformed/lifecycle-livedata-2.0.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/b739943a6f9a954e801cb8c5a4644330/transformed/core-runtime-2.1.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/55d1aad24e1b299921baeb4092f9c22e/transformed/lifecycle-livedata-core-2.5.1-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.5.1/1fdb7349701e9cf2f0a69fc10642b6fef6bb3e12/lifecycle-common-2.5.1.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/9eea644473db4edea1bf70f3a88460f7/transformed/interpolator-1.0.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/3ecea1dca89c6d58b3a510f09cf92089/transformed/documentfile-1.0.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/37325dac24f48b2061c700d15d49f304/transformed/localbroadcastmanager-1.0.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/4ca9b442ef01e1b889cbe2e1d1890ead/transformed/print-1.0.0-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.3.0/21f49f5f9b85fc49de712539f79123119740595/annotation-1.3.0.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/transforms-3/1aaa3513aeac6c38e949f343f13d2d4a/transformed/stetho-1.5.1-api.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/2.0.1/516c03b21d50a644d538de0f0369c620989cd8f0/jsr305-2.0.1.jar</arg>\n                <arg>$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar</arg>\n                <arg>$USER_HOME$/Library/Android/sdk/platforms/android-33/android.jar</arg>\n                <arg>$USER_HOME$/Library/Android/sdk/build-tools/30.0.3/core-lambda-stubs.jar</arg>\n              </args>\n            </stringArg>\n            <stringArg name=\"destination\" arg=\"$MODULE_DIR$/../../../app/build/tmp/kotlin-classes/debugUnitTest\" />\n            <stringArg name=\"jvmTarget\" arg=\"1.8\" />\n            <stringArg name=\"moduleName\" arg=\"app_debug\" />\n            <stringArg name=\"apiVersion\" arg=\"1.8\" />\n            <stringArg name=\"languageVersion\" arg=\"1.8\" />\n          </stringArguments>\n          <arrayArguments>\n            <arrayArg name=\"friendPaths\">\n              <args>\n                <arg>$MODULE_DIR$/../../../app/build/tmp/kotlin-classes/debug</arg>\n                <arg>$MODULE_DIR$/../../../app/build/intermediates/javac/debug/classes</arg>\n                <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_app_classes_jar/debug/classes.jar</arg>\n              </args>\n            </arrayArg>\n            <arrayArg name=\"pluginClasspaths\" />\n            <arrayArg name=\"pluginOptions\" />\n          </arrayArguments>\n        </compilerArguments>\n      </configuration>\n    </facet>\n    <facet type=\"android\" name=\"Android\">\n      <configuration>\n        <option name=\"SELECTED_BUILD_VARIANT\" value=\"debug\" />\n        <option name=\"ALLOW_USER_CONFIGURATION\" value=\"false\" />\n        <option name=\"MANIFEST_FILE_RELATIVE_PATH\" value=\"/src/main/AndroidManifest.xml\" />\n        <option name=\"RES_FOLDER_RELATIVE_PATH\" value=\"/src/main/res\" />\n        <option name=\"RES_FOLDERS_RELATIVE_PATH\" value=\"file://$MODULE_DIR$/../../../app/src/main/res;file://$MODULE_DIR$/../../../app/src/debug/res;file://$MODULE_DIR$/../../../app/build/generated/res/rs/debug;file://$MODULE_DIR$/../../../app/build/generated/res/resValues/debug\" />\n        <option name=\"TEST_RES_FOLDERS_RELATIVE_PATH\" value=\"file://$MODULE_DIR$/../../../app/src/androidTest/res;file://$MODULE_DIR$/../../../app/src/androidTestDebug/res;file://$MODULE_DIR$/../../../app/build/generated/res/rs/androidTest/debug;file://$MODULE_DIR$/../../../app/build/generated/res/resValues/androidTest/debug\" />\n        <option name=\"ASSETS_FOLDER_RELATIVE_PATH\" value=\"/src/main/assets\" />\n      </configuration>\n    </facet>\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules/app/Codepath_project.app.unitTest.iml b/.idea/modules/app/Codepath_project.app.unitTest.iml
+--- a/.idea/modules/app/Codepath_project.app.unitTest.iml	
++++ b/.idea/modules/app/Codepath_project.app.unitTest.iml	
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<module version="4">
++<module external.linked.project.id=":app:unitTest" external.linked.project.path="$MODULE_DIR$/../../../app" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+   <component name="FacetManager">
+     <facet type="kotlin-language" name="Kotlin">
+       <configuration version="5" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+@@ -106,4 +106,74 @@
+       </configuration>
+     </facet>
+   </component>
++  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
++    <output url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/debug/classes" />
++    <output-test url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/debugUnitTest/classes" />
++    <exclude-output />
++    <content url="file://$MODULE_DIR$/../../../app/build/generated/ap_generated_sources/debugUnitTest/out" />
++    <content url="file://$MODULE_DIR$/../../../app/src/test">
++      <sourceFolder url="file://$MODULE_DIR$/../../../app/src/test/java" isTestSource="true" />
++    </content>
++    <content url="file://$MODULE_DIR$/../../../app/src/testDebug" />
++    <orderEntry type="jdk" jdkName="Android API 33, extension level 3 Platform" jdkType="Android SDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="module" module-name="Codepath_project.app.main" scope="TEST" />
++    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.8.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okhttp3:okhttp:4.9.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: com.squareup.okio:okio:2.8.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: commons-cli:commons-cli:1.2" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: com.google.code.findbugs:jsr305:2.0.1" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: com.android.support:support-annotations:28.0.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation:1.3.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.arch.core:core-common:2.1.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-common:2.5.1" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.collection:collection:1.1.0" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.13.2" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: com.codepath.libraries:asynchttpclient:2.2.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: com.facebook.stetho:stetho-okhttp3:1.5.1@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: com.facebook.stetho:stetho:1.5.1@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.core:core-ktx:1.9.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.core:core:1.9.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation-experimental:1.3.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.5.1@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.1@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.appcompat:appcompat:1.6.1@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.activity:activity:1.6.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.5.1@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.5.1@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.savedstate:savedstate:1.2.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.appcompat:appcompat-resources:1.6.1@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.vectordrawable:vectordrawable:1.1.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.vectordrawable:vectordrawable-animated:1.1.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.interpolator:interpolator:1.0.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.cursoradapter:cursoradapter:1.0.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.drawerlayout:drawerlayout:1.1.1@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.customview:customview:1.1.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.fragment:fragment:1.3.6@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.viewpager:viewpager:1.0.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.loader:loader:1.0.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-livedata:2.0.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.arch.core:core-runtime:2.1.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.material:material:1.8.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.cardview:cardview:1.0.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.constraintlayout:constraintlayout:2.1.4@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.dynamicanimation:dynamicanimation:1.0.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.legacy:legacy-support-core-utils:1.0.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.documentfile:documentfile:1.0.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.print:print:1.0.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.recyclerview:recyclerview:1.1.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.transition:transition:1.2.0@aar" level="project" />
++    <orderEntry type="library" scope="TEST" name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar" level="project" />
++  </component>
++  <component name="TestModuleProperties" production-module="Codepath_project.app.main" />
+ </module>
+\ No newline at end of file
+Index: .idea/modules/app/Codepath_project.app.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module version=\"4\">\n  <component name=\"FacetManager\">\n    <facet type=\"android-gradle\" name=\"Android-Gradle\">\n      <configuration>\n        <option name=\"GRADLE_PROJECT_PATH\" value=\":app\" />\n        <option name=\"LAST_SUCCESSFUL_SYNC_AGP_VERSION\" />\n        <option name=\"LAST_KNOWN_AGP_VERSION\" value=\"7.4.1\" />\n      </configuration>\n    </facet>\n    <facet type=\"android\" name=\"Android\">\n      <configuration>\n        <option name=\"SELECTED_BUILD_VARIANT\" value=\"debug\" />\n        <option name=\"ALLOW_USER_CONFIGURATION\" value=\"false\" />\n        <option name=\"MANIFEST_FILE_RELATIVE_PATH\" value=\"/src/main/AndroidManifest.xml\" />\n        <option name=\"RES_FOLDER_RELATIVE_PATH\" value=\"/src/main/res\" />\n        <option name=\"RES_FOLDERS_RELATIVE_PATH\" value=\"file://$MODULE_DIR$/../../../app/src/main/res;file://$MODULE_DIR$/../../../app/src/debug/res;file://$MODULE_DIR$/../../../app/build/generated/res/rs/debug;file://$MODULE_DIR$/../../../app/build/generated/res/resValues/debug\" />\n        <option name=\"TEST_RES_FOLDERS_RELATIVE_PATH\" value=\"file://$MODULE_DIR$/../../../app/src/androidTest/res;file://$MODULE_DIR$/../../../app/src/androidTestDebug/res;file://$MODULE_DIR$/../../../app/build/generated/res/rs/androidTest/debug;file://$MODULE_DIR$/../../../app/build/generated/res/resValues/androidTest/debug\" />\n        <option name=\"ASSETS_FOLDER_RELATIVE_PATH\" value=\"/src/main/assets\" />\n      </configuration>\n    </facet>\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules/app/Codepath_project.app.iml b/.idea/modules/app/Codepath_project.app.iml
+--- a/.idea/modules/app/Codepath_project.app.iml	
++++ b/.idea/modules/app/Codepath_project.app.iml	
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<module version="4">
++<module external.linked.project.id=":app" external.linked.project.path="$MODULE_DIR$/../../../app" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="Codepath project" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+   <component name="FacetManager">
+     <facet type="android-gradle" name="Android-Gradle">
+       <configuration>
+@@ -20,4 +20,15 @@
+       </configuration>
+     </facet>
+   </component>
++  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
++    <output url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/debug/classes" />
++    <output-test url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/debugUnitTest/classes" />
++    <exclude-output />
++    <content url="file://$MODULE_DIR$/../../../app">
++      <excludeFolder url="file://$MODULE_DIR$/../../../app/.gradle" />
++      <excludeFolder url="file://$MODULE_DIR$/../../../app/build" />
++    </content>
++    <orderEntry type="jdk" jdkName="Android API 33, extension level 3 Platform" jdkType="Android SDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
+ </module>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	
++++ b/.idea/gradle.xml	
+@@ -1,4 +1,20 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="GradleMigrationSettings" migrationVersion="1" />
++  <component name="GradleSettings">
++    <option name="linkedExternalProjectsSettings">
++      <GradleProjectSettings>
++        <option name="testRunner" value="GRADLE" />
++        <option name="distributionType" value="DEFAULT_WRAPPED" />
++        <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="gradleJvm" value="Embedded JDK" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$" />
++            <option value="$PROJECT_DIR$/app" />
++          </set>
++        </option>
++      </GradleProjectSettings>
++    </option>
++  </component>
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AndroidLayouts\">\n    <shared>\n      <config />\n    </shared>\n  </component>\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"NONE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"2b7944d6-e017-45a1-8f08-03bd516feba5\" name=\"Changes\" comment=\"\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExecutionTargetManager\" SELECTED_TARGET=\"device_and_snapshot_combo_box_target[/Users/gaeldiab/.android/avd/Pixel_4a_API_30_gael.avd]\" />\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2OnH8wnOgXvALGF8dG9uO5OL8Xn\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.cidr.known.project.marker\": \"true\",\n    \"cidr.known.project.marker\": \"true\",\n    \"memory.settings.postsync.last.time.stamp\": \"1682189282951\"\n  }\n}]]></component>\n  <component name=\"RunManager\">\n    <configuration name=\"app\" type=\"AndroidRunConfigurationType\" factoryName=\"Android App\">\n      <module name=\"Codepath_project.app.main\" />\n      <option name=\"DEPLOY\" value=\"true\" />\n      <option name=\"DEPLOY_APK_FROM_BUNDLE\" value=\"false\" />\n      <option name=\"DEPLOY_AS_INSTANT\" value=\"false\" />\n      <option name=\"ARTIFACT_NAME\" value=\"\" />\n      <option name=\"PM_INSTALL_OPTIONS\" value=\"\" />\n      <option name=\"ALL_USERS\" value=\"false\" />\n      <option name=\"ALWAYS_INSTALL_WITH_PM\" value=\"false\" />\n      <option name=\"CLEAR_APP_STORAGE\" value=\"false\" />\n      <option name=\"DYNAMIC_FEATURES_DISABLED_LIST\" value=\"\" />\n      <option name=\"ACTIVITY_EXTRA_FLAGS\" value=\"\" />\n      <option name=\"MODE\" value=\"default_activity\" />\n      <option name=\"CLEAR_LOGCAT\" value=\"false\" />\n      <option name=\"SHOW_LOGCAT_AUTOMATICALLY\" value=\"false\" />\n      <option name=\"INSPECTION_WITHOUT_ACTIVITY_RESTART\" value=\"false\" />\n      <option name=\"TARGET_SELECTION_MODE\" value=\"DEVICE_AND_SNAPSHOT_COMBO_BOX\" />\n      <option name=\"SELECTED_CLOUD_MATRIX_CONFIGURATION_ID\" value=\"-1\" />\n      <option name=\"SELECTED_CLOUD_MATRIX_PROJECT_ID\" value=\"\" />\n      <option name=\"DEBUGGER_TYPE\" value=\"Auto\" />\n      <Auto>\n        <option name=\"USE_JAVA_AWARE_DEBUGGER\" value=\"false\" />\n        <option name=\"SHOW_STATIC_VARS\" value=\"true\" />\n        <option name=\"WORKING_DIR\" value=\"\" />\n        <option name=\"TARGET_LOGGING_CHANNELS\" value=\"lldb process:gdb-remote packets\" />\n        <option name=\"SHOW_OPTIMIZED_WARNING\" value=\"true\" />\n      </Auto>\n      <Hybrid>\n        <option name=\"USE_JAVA_AWARE_DEBUGGER\" value=\"false\" />\n        <option name=\"SHOW_STATIC_VARS\" value=\"true\" />\n        <option name=\"WORKING_DIR\" value=\"\" />\n        <option name=\"TARGET_LOGGING_CHANNELS\" value=\"lldb process:gdb-remote packets\" />\n        <option name=\"SHOW_OPTIMIZED_WARNING\" value=\"true\" />\n      </Hybrid>\n      <Java />\n      <Native>\n        <option name=\"USE_JAVA_AWARE_DEBUGGER\" value=\"false\" />\n        <option name=\"SHOW_STATIC_VARS\" value=\"true\" />\n        <option name=\"WORKING_DIR\" value=\"\" />\n        <option name=\"TARGET_LOGGING_CHANNELS\" value=\"lldb process:gdb-remote packets\" />\n        <option name=\"SHOW_OPTIMIZED_WARNING\" value=\"true\" />\n      </Native>\n      <Profilers>\n        <option name=\"ADVANCED_PROFILING_ENABLED\" value=\"false\" />\n        <option name=\"STARTUP_PROFILING_ENABLED\" value=\"false\" />\n        <option name=\"STARTUP_CPU_PROFILING_ENABLED\" value=\"false\" />\n        <option name=\"STARTUP_CPU_PROFILING_CONFIGURATION_NAME\" value=\"Java/Kotlin Method Sample (legacy)\" />\n        <option name=\"STARTUP_NATIVE_MEMORY_PROFILING_ENABLED\" value=\"false\" />\n        <option name=\"NATIVE_MEMORY_SAMPLE_RATE_BYTES\" value=\"2048\" />\n      </Profilers>\n      <option name=\"DEEP_LINK\" value=\"\" />\n      <option name=\"ACTIVITY_CLASS\" value=\"\" />\n      <option name=\"SEARCH_ACTIVITY_IN_GLOBAL_SCOPE\" value=\"false\" />\n      <option name=\"SKIP_ACTIVITY_VALIDATION\" value=\"false\" />\n      <method v=\"2\">\n        <option name=\"Android.Gradle.BeforeRunTask\" enabled=\"true\" />\n      </method>\n    </configuration>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"2b7944d6-e017-45a1-8f08-03bd516feba5\" name=\"Changes\" comment=\"\" />\n      <created>1682189270189</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1682189270189</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -9,13 +9,21 @@
+     <option name="autoReloadType" value="NONE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="2b7944d6-e017-45a1-8f08-03bd516feba5" name="Changes" comment="" />
++    <list default="true" id="2b7944d6-e017-45a1-8f08-03bd516feba5" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/gaeldiab/.android/avd/Pixel_4a_API_30_gael.avd]" />
++  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/lubnaasha/.android/avd/Asha_Pixel_4a_API_30.avd]" />
+   <component name="ExternalProjectsData">
+     <projectState path="$PROJECT_DIR$">
+       <ProjectState />
+@@ -40,6 +48,7 @@
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.cidr.known.project.marker": "true",
+     "cidr.known.project.marker": "true",
++    "last_opened_file_path": "/Users/lubnaasha/AndroidStudioProjects/our-project",
+     "memory.settings.postsync.last.time.stamp": "1682189282951"
+   }
+ }]]></component>
