@@ -86,46 +86,52 @@ class MainActivity : AppCompatActivity() {
             {
                 Log.d("Recipe Success", "$json")
 
+
                 var getRecipe = json.jsonObject.getJSONArray("meals")
-
-                for (i in 0 until getRecipe.length()) {
-                    var imageArray = getRecipe.getJSONObject(i)
-                    imagelist.add(imageArray.getString("strMealThumb"))
-                }
-
-                for (i in 0 until getRecipe.length()) {
-                    var imageArray = getRecipe.getJSONObject(i)
-                    namelist.add(imageArray.getString("strMeal"))
-                }
-
-                for (i in 0 until getRecipe.length()) {
-                    var imageArray = getRecipe.getJSONObject(i)
-                    categorylist.add(imageArray.getString("strCategory"))
-                }
-
-                for (i in 0 until getRecipe.length()) {
-                    var imageArray = getRecipe.getJSONObject(i)
-                    arealist.add(imageArray.getString("strArea"))
-                }
-
-                var adapter = RecipeAdapter(imagelist, namelist, categorylist, arealist)
-                rvRecipes.adapter = adapter
-                rvRecipes.layoutManager = LinearLayoutManager(this@MainActivity)
-
-                val text = "Search successful!"
-                val duration = Toast.LENGTH_SHORT
-
-                val toast = Toast.makeText(applicationContext, text, duration)
-                toast.show()
-
-                //this is for being able to click on an item in recycler view
-                adapter.setOnItemClickListener(object : RecipeAdapter.onItemClickListener {
-                    override fun onItemClick(position: Int) {
-                        val intent = Intent(this@MainActivity, RecipeDetails::class.java)
-                        intent.putExtra("meal", namelist[position])
-                        startActivity(intent)
+                if(getRecipe != null){
+                    for (i in 0 until getRecipe.length()) {
+                        var imageArray = getRecipe.getJSONObject(i)
+                        imagelist.add(imageArray.getString("strMealThumb"))
                     }
-                })
+
+                    for (i in 0 until getRecipe.length()) {
+                        var imageArray = getRecipe.getJSONObject(i)
+                        namelist.add(imageArray.getString("strMeal"))
+                    }
+
+                    for (i in 0 until getRecipe.length()) {
+                        var imageArray = getRecipe.getJSONObject(i)
+                        categorylist.add(imageArray.getString("strCategory"))
+                    }
+
+                    for (i in 0 until getRecipe.length()) {
+                        var imageArray = getRecipe.getJSONObject(i)
+                        arealist.add(imageArray.getString("strArea"))
+                    }
+
+                    var adapter = RecipeAdapter(imagelist, namelist, categorylist, arealist)
+                    rvRecipes.adapter = adapter
+                    rvRecipes.layoutManager = LinearLayoutManager(this@MainActivity)
+
+                    val text = "Search successful!"
+                    val duration = Toast.LENGTH_SHORT
+
+                    val toast = Toast.makeText(applicationContext, text, duration)
+                    toast.show()
+
+                    //this is for being able to click on an item in recycler view
+                    adapter.setOnItemClickListener(object : RecipeAdapter.onItemClickListener {
+                        override fun onItemClick(position: Int) {
+                            val intent = Intent(this@MainActivity, RecipeDetails::class.java)
+                            intent.putExtra("meal", namelist[position])
+                            startActivity(intent)
+                        }
+                    })
+                }
+                else{
+                    Toast.makeText(this@MainActivity,"error",Toast.LENGTH_SHORT)
+                }
+
             }
         }]
     }
