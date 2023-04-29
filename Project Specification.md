@@ -91,6 +91,8 @@ process, or what you learned this unit!
 
 For Milestone 2, include **2+ GIFs** of the build process here!
 
+<img src="https://user-images.githubusercontent.com/92476592/235282702-7fe9ae24-010a-4b8b-8fa6-cab8e2a8100e.gif" width=300> <img src="https://user-images.githubusercontent.com/92476592/235282715-4315aa06-9b3f-4802-a84f-781e3b721ec5.gif" width=300>
+
 <img src="https://user-images.githubusercontent.com/92476592/235281969-f978da95-a813-4e89-a046-823571c297a6.gif" width= 300> <img src="https://user-images.githubusercontent.com/92476592/235282007-9e9f84c7-cf9e-4857-aaab-73e6382fc9d4.gif" width= 300>
 
 ## License
